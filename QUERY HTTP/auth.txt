@@ -1,0 +1,26 @@
+Cadastrar usuario
+POST
+http://localhost:8686/auth/signup
+{
+    "name": "Adilson Barros",
+    "username": "abarros",
+    "email": "barroscv@gmail.com",
+    "password": "ab14728ab"
+}
+
+LOGIN
+POST
+http://localhost:8686/auth/signin
+{
+    "usernameOrEmail": "abarros",
+    "password": "ab14728ab"
+}
+
+LOGOU
+POST
+http://localhost:8686/logout
+
+
+
+
+'$2a$10$fXsjhhJHbFcA9HSolcob5OH7xUaj.pEOzJ/u9BMs3jYvApgRDfKE6'

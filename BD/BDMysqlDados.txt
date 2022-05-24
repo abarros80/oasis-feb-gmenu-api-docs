@@ -1,0 +1,10 @@
+root
+oa$14728Ady
+
+CREATE USER gmenubduser@localhost IDENTIFIED BY 'oa$gmenu#';
+
+CREATE DATABASE gmenubd;
+
+SHOW GRANTS FOR gmenubduser@localhost;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON gmenubd.* TO gmenubduser@localhost;

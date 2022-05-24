@@ -1,0 +1,155 @@
+POST:
+
+http://localhost:8686/gmenu/conjuntos/
+{
+    "pais": "Cabo Verde",
+    "ilha": "Sal",
+    "cidade": "Santa Maria",
+    "conselho": "Sal",
+    "zona": "Avenida dos hoteis",
+    "rua": "Ildo Lobo",
+    "numero_porta": "23, 1ºEsq",
+    "codigo_postal": "4110"
+}
+
+
+----------------------------
+
+
+
+http://localhost:8686/simplex/emails
+{
+    "email": "abarrosp@hotmail.com",
+    "descricao": "Email pessoal",
+    "contacto": "simplex/contactos/8"
+}
+
+http://localhost:8686/simplex/telefones
+{
+    "numero": "9259426",
+    "operadora": "T Mais",
+    "descricao": "Numero Trabalho",
+    "contacto": "simplex/contactos/8"
+}
+
+http://localhost:8686/simplex/funcionarios
+{
+    "nome": "Adilson",
+    "apelido": "Barros",
+    "nif": "1245789451",
+    "bi": "1252354852",
+    "genero": "M",
+    "nascimento": "1981-03-01",
+    "username": "barros",
+    "password": "barros&1",
+    "contacto": "simplex/contactos/8"
+}
+
+http://localhost:8686/simplex/clientes
+{
+    "nome": "Ana",
+    "apelido": "Liza",
+    "nif": "11021996",
+    "num_cliente": "252525",
+    "data_nasc": "1981-01-01",
+    "genero": "F",
+    "contacto": "simplex/contactos/8"
+}
+
+http://localhost:8686/simplex/estabelecimentos
+{
+    "nome": "Bar",
+    "activo": 1,
+    "nif": 1245789451,
+    "num_licenca": "1252354852",
+    "contacto": "simplex/contactos/8"
+}
+
+http://localhost:8686/simplex/gerentes
+{
+    "nome": "Adilson",
+    "apelido": "Barros",
+    "departamento": "Comercial",
+    "funcao": "Capatas",
+    "nif": "1245789451",
+    "num_bi": "1252354852",
+    "num_cni": "1252354852",
+    "genero": "M",
+    "data_nasc": "1981-03-01",
+    "username": "barros",
+    "password": "barros&1",
+    "contacto": "simplex/contactos/1"
+}
+
+http://localhost:8686/simplex/categoriaprodutos
+{
+    "activo": 1,
+    "descricao": "BEBIDA",
+    "nome": "BEBIDA",
+    "ordem": 1
+}
+
+
+http://localhost:8686/simplex/ivas
+{
+    "base": 100,
+    "valor": 6,
+    "activo": 1,
+    "descricao": "Iva 6",
+    "nome": "IV6"
+}
+
+
+http://localhost:8686/simplex/produtos
+{
+    "activo": 1,
+    "codigo_prod": "AXBA",
+    "data_validade": "2021-10-02",
+    "descricao": "Cola",
+    "nome": "Coca Cola",
+    "preco_compra": 100,
+    "preco_venda": 200,
+    "categoriaProduto": "simplex/categoriaProdutos/1",
+    "iva": "simplex/ivas/1"
+}
+
+http://localhost:8686/simplex/unidadeatomicas
+{
+    "nome": "Mini Mercado",
+    "estabelecimento": "/simplex/estabelecimentos/1" 
+}
+
+http://localhost:8686/simplex/unidademultiplas
+{
+    "nome": "Beach Bar",
+    "estabelecimento": "/simplex/estabelecimentos/1" 
+}
+
+http://localhost:8686/simplex/mesas
+{
+    "nome": "M01",
+    "activo": 1,
+    "estado": "A",
+    "unidadeVendaMultipla": "/simplex/unidademultiplas/1" 
+}
+
+
+http://localhost:8686/simplex/vendas
+{
+    "data": "2018-12-10T13:49:51.141Z",
+    "cliente": "/simplex/clientes/1",
+    "funcionario": "/simplex/funcionarios/1",
+    "unidadeVendaAtomica": "/simplex/unidadeatomicas/1" 
+}
+
+
+{
+    "quantidade": 1.0,
+    "valor_iva": 10.0,
+    "base_iva": 100.0,
+    "preco_venda": 200.0,
+    
+        "venda": "/simplex/vendas/1",
+        "produto":"simplex/produtos/2"
+    
+}

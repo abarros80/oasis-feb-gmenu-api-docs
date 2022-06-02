@@ -1,0 +1,70 @@
+
+	//NOME -----------------------------------------------------------------------------------------
+	
+	Optional<Conjunto> findByNomeOrderByNome(String nome);
+
+	Optional<Conjunto> findByNomeIgnoreCaseOrderByNome(String nome);	
+	
+	Optional<Conjunto> findByNomeIgnoreCaseAndActivoOrderByNome(String nome, boolean activo);
+	
+	Page<Conjunto>  findByNomeContainingIgnoreCaseAndActivo(String nome, boolean activo, Pageable pageable);
+	
+	Boolean existsByNome(String nome);
+
+
+	//DESC PT -----------------------------------------------------------------------------------------
+	
+	Page<Conjunto>  findByDescPtContainingIgnoreCaseAndActivo(String descPt, boolean activo, Pageable pageable);
+	
+	//DESC ING -----------------------------------------------------------------------------------------
+	
+	Page<Conjunto>  findByDescIngContainingIgnoreCaseAndActivo(String descIng, boolean activo, Pageable pageable);
+	
+	//DESC FR -----------------------------------------------------------------------------------------
+	
+	Page<Conjunto>  findByDescFrContainingIgnoreCaseAndActivo(String descFr, boolean activo, Pageable pageable);
+	
+	//TIPO CONJUNTO -----------------------------------------------------------------------------------------
+
+	long countByTipoConjuntoId(long id);
+	
+	long countByTipoConjuntoNome(String nome);
+	
+	Page<Conjunto>  findByTipoConjuntoId(Long id, Pageable pageable);
+	
+	Page<Conjunto>  findByTipoConjuntoIdAndActivo(Long id, boolean activo, Pageable pageable);
+	
+	Page<Conjunto>  findByTipoConjuntoNomeContainingIgnoreCaseAndActivo(String nome, boolean activo, Pageable pageable);
+	
+	
+	//DATA CADASTRO -----------------------------------------------------------------------------------------
+	
+	Page<Conjunto> findByDataCadastroBetween(@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime dataInicial, @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime dataFinal, Pageable pageable);
+
+
+
+-----------------
+
+
+	//NOME -----------------------------------------------------------------------------------------
+	
+	Optional<TipoConjunto> findByNomeOrderByNome(String nome);
+
+	Optional<TipoConjunto> findByNomeIgnoreCaseOrderByNome(String nome);	
+	
+	Optional<TipoConjunto> findByNomeIgnoreCaseAndActivoOrderByNome(String nome, boolean activo);
+	
+	Page<TipoConjunto>  findByNomeContainingIgnoreCaseAndActivo(String nome, boolean activo, Pageable pageable);
+	
+	Page<TipoConjunto>  findByNomeContainingIgnoreCaseAndActivoOrderByNome(String nome, boolean activo, Pageable pageable);
+	
+	Page<TipoConjunto>  findByActivoOrderByNome(boolean activo, Pageable pageable);
+	
+	Boolean existsByNome(String nome);
+	
+	//DATA CADASTRO -----------------------------------------------------------------------------------------
+	
+	Page<TipoConjunto> findByDataCadastroBetween(@DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate dataInicial, @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate dataFinal, Pageable pageable);
+
+---------------
+

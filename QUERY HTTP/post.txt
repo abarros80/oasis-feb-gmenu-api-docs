@@ -1,3 +1,22 @@
+
+---------------------------USERS:
+http://localhost:8686/users
+{
+    "name": "Barros",
+    "username": "abarrosr",
+    "email": "adilsonb.barros@oasisatlantico.com",
+    "password": "123456878",
+    "hotels": ["/hotels/1"],
+    "roles": ["/roles/1"]
+}
+
+---------------------------ROLES:
+http://localhost:8686/roles
+{
+    "name": "ROLE_SUPER"
+}
+
+---------------------END 20220602-------------------
 POST:
 
 http://localhost:8686/gmenu/conjuntos/

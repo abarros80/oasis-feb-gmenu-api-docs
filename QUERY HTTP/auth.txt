@@ -2,8 +2,8 @@ Cadastrar usuario
 POST
 http://localhost:8686/auth/signup
 {
-    "name": "Adilson Barros",
-    "username": "abarros",
+    "name": "Super User",
+    "username": "super",
     "email": "barroscv@gmail.com",
     "password": "ab14728ab"
 }

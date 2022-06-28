@@ -1,3 +1,50 @@
+---------------------------ITEM:
+POST
+http://localhost:8686/itens/
+{
+    "nomePt": "Cha ",
+    "nomeIng": "Cha",
+    "nomeFr": "Cha",
+    "activo": true,
+    "fotoPath": "...",
+    "descPt": "Cha cha",
+    "descFr": "Cha cha",
+    "descIng": "Cha cha",
+    "preco": 200.0,
+    "quantidade": 1.0,
+    "unidadeMedidaEnum": "UNIDADE",
+    "idUser": 1,
+    "tipoItem": "/tipoitens/1",
+    "hotel": "/hotels/1"
+}
+
+PUT
+http://localhost:8686/itens/5
+{
+    "id": 5,
+    "nomePt": "Chaaaaaaaaasa",
+    "nomeIng": "Chaaasaa",
+    "nomeFr": "Chaaasaa",
+    "activo": true,
+    "fotoPath": "...",
+    "descPt": "Cha cha",
+    "descFr": "Cha cha",
+    "descIng": "Cha cha",
+    "preco": 200.0,
+    "quantidade": 1.0,
+    "unidadeMedidaEnum": "UNIDADE",
+    "idUser": 1,
+    "tipoItem": "/tipoitens/1",
+    "hotel": "/hotels/2"
+}
+-------------------------------------------
+http://localhost:8686/itemcardapios/
+{
+     "ordem": 1,
+     "cardapio": "/cardapios/1",
+     "item": "/itens/5"
+
+}
 
 ---------------------------USERS:
 http://localhost:8686/users

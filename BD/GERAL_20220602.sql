@@ -99,7 +99,17 @@ VALUES
 INSERT INTO `gmenubd`.`tbl_item`
 (`id`,`activo`,`desc_fr`,`desc_ing`,`desc_pt`,`foto_path`,`data_alteracao`,`data_criacao`,`id_user_alteracao`,`id_user_criacao`,`nome_fr`,`nome_ing`,`nome_pt`,`preco`,`quantidade`,`unidade_medida_enum`,`hotel_id`,`tipo_item_id`)
 VALUES
-(2,1,"Coca Cola","Fanta Fanta","Fanta","...",sysdate(), sysdate(), 1, 1, "Fanta", "Fanta", "Fanta", 100, 1, "UNIDADE", 1, 1);
+(2,1,"Fanta","Fanta Fanta","Fanta","...",sysdate(), sysdate(), 1, 1, "Fanta", "Fanta", "Fanta", 100, 1, "UNIDADE", 1, 1);
+
+INSERT INTO `gmenubd`.`tbl_item`
+(`id`,`activo`,`desc_fr`,`desc_ing`,`desc_pt`,`foto_path`,`data_alteracao`,`data_criacao`,`id_user_alteracao`,`id_user_criacao`,`nome_fr`,`nome_ing`,`nome_pt`,`preco`,`quantidade`,`unidade_medida_enum`,`hotel_id`,`tipo_item_id`)
+VALUES
+(3,1,"Atum Grelhado","Atum Grelhado","Atum Grelhado","...",sysdate(), sysdate(), 1, 1, "Atum Grelhado", "Atum Grelhado", "Atum Grelhado", 100, 1, "UNIDADE", 1, 2);
+
+INSERT INTO `gmenubd`.`tbl_item`
+(`id`,`activo`,`desc_fr`,`desc_ing`,`desc_pt`,`foto_path`,`data_alteracao`,`data_criacao`,`id_user_alteracao`,`id_user_criacao`,`nome_fr`,`nome_ing`,`nome_pt`,`preco`,`quantidade`,`unidade_medida_enum`,`hotel_id`,`tipo_item_id`)
+VALUES
+(4,1,"Bife","Bife","Bife","...",sysdate(), sysdate(), 1, 1, "Bife", "Bife", "Bife", 100, 1, "UNIDADE", 1, 2);
 
 /*COMENTARIO: ASSOCIAR CARDAPIOS A ITEM -----------------------------------------------------------------------------------------------*/
 INSERT INTO `gmenubd`.`tbl_item_cardapio`
@@ -107,3 +117,9 @@ INSERT INTO `gmenubd`.`tbl_item_cardapio`
 VALUES
 (1,1,1,1),
 (2,2,1,2);
+
+INSERT INTO `gmenubd`.`tbl_item_cardapio`
+(`id`,`ordem`,`cardapio_id`,`item_id`)
+VALUES
+(3,3,5,3),
+(4,4,5,4);

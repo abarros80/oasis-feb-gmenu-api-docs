@@ -40,17 +40,13 @@ INSERT INTO `gmenubd`.`user_hotels`
 VALUES
 (1,1), (1,2), (1,3), (1,4),(2,1);
 
-/*COMENTAR DEPOIS 
+/*COMENTAR DEPOIS   
 
 INSERT INTO `gmenubd`.`user_hotels`
 (`user_id`,`hotel_id`)
 VALUES
 (3,1), (3,2), (3,3);
-
- */
-
-
-
+*/
 
 
 /*COMENTARIO: INSERIR RESTAURANTES DO HOTEL PORTO GRANDE--------------------------------------------------------------------------------------------------------------*/
